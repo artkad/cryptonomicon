@@ -99,7 +99,7 @@
           <div
             v-for="(bar, idx) in normalizeGraph()"
             :key="idx"
-            :style="{ height: `${bar}%`}"
+            :style="{ height: `${bar}%` }"
             class="bg-purple-800 border w-10"
           ></div>
         </div>
@@ -172,7 +172,7 @@ export default {
 
     select(ticker) {
       this.sel = ticker;
-      this.graph = []
+      this.graph = [];
     },
 
     handleDelete(tickerToRemove) {
@@ -186,7 +186,6 @@ export default {
       return this.graph.map(
         price => 5 + ((price - minValue) * 95) / (maxValue - minValue)
       );
-
     }
 
     // 900372c08a95ed49b877cd9ee613b646d3fee3954ad64ab2816ff1bdc0347be0
@@ -194,4 +193,3 @@ export default {
 };
 </script>
 
-<style src="./app.css"></style>
